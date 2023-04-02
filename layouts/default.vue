@@ -1,8 +1,5 @@
 <template>
-  <header>
-    <NuxtLink to="/" >kevin-kelly.dev</NuxtLink>
-    <NavBar />
-  </header>
+  <DefaultHeader />
   <div id="content-wrapper">
     <main>
       <slot />
@@ -30,20 +27,6 @@
 </script>
 
 <style scoped>
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f5f5f5;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
 main {
   display: flex;
   justify-content: space-between;
