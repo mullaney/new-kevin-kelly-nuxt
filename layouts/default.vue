@@ -1,11 +1,7 @@
 <template>
   <header>
     <NuxtLink to="/" >kevin-kelly.dev</NuxtLink>
-    <nav>
-      <NuxtLink to="/" >Home</NuxtLink>
-      <NuxtLink to="/about" >About</NuxtLink>
-      <NuxtLink to="/log" >Log</NuxtLink>
-    </nav>
+    <NavBar />
   </header>
   <div id="content-wrapper">
     <main>
@@ -28,6 +24,10 @@
     <p>© 2023 Kevin Kelly</p>
   </footer>
 </template>
+
+<script setup lang="ts">
+
+</script>
 
 <style scoped>
 header {
