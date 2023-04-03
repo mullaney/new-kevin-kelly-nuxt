@@ -1,7 +1,9 @@
 ---
-title: Becoming an expert at reducing arrays in JavaScript
+title: Reducing arrays in JavaScript
 published_on: 1605657179320
 ---
+
+# How to Become an Expert at Reducing Arrays in JavaScript
 
 When learning JavaScript, one of the early challenges was understanding the higher order methods for arrays like map, sort, find, filter, and reduce. The idea of passing a function as a parameter to another function was uncomfortable. But like most things, using these methods gradually made them feel familiar, and eventually easy. It did not take me too much time to understand map, filter and sort, mostly because I had many opportunities to use them while learning React.
 
