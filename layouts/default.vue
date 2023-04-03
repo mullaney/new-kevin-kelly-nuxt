@@ -30,6 +30,7 @@
 main {
   display: flex;
   justify-content: space-between;
+  min-width: min(80ch, calc(100vw - 4rem));
 }
 
 main, header, footer {

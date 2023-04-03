@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   css: [
     '@/assets/global.css',
   ],
+  modules: [
+    '@nuxt/content'
+  ],
   typescript: {
     shim: false,
   },
