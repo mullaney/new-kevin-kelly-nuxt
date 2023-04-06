@@ -43,7 +43,6 @@ const showPost = computed(() => {
   return published_on <= dateNow;
 });
 const formattedDate = computed(() => {
-  // include time
   return new Date(published_on).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
