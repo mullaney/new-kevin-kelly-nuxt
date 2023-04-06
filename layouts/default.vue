@@ -28,6 +28,7 @@
 
 <style scoped>
 main {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   min-width: min(80ch, calc(100vw - 4rem));
