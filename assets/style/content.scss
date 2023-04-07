@@ -3,8 +3,16 @@
     background: #ecebf7;
     border: 1px solid #ccc;
     border-radius: 3px;
-    padding: 1rem;
     margin: 1rem 0;
+    overflow-x: auto;
+    max-width: min(80ch, calc(100vw - 4rem));
+
+    code {
+      display: block;
+      padding: .75rem 1.5rem;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 1rem;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {

@@ -48,7 +48,7 @@ footer {
 }
 
 #content-wrapper > * {
-  max-width: 80ch;
+  max-width: min(80ch, calc(100vw - 4rem));
   place-self: center;
 }
 
