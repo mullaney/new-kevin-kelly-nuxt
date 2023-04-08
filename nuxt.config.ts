@@ -4,6 +4,11 @@ export default defineNuxtConfig({
     '@/assets/style/global.css',
     '~/assets/style/content.scss'
   ],
+  content: {
+    highlight: {
+      theme: 'github-light'
+    }
+  },
   modules: [
     '@nuxt/content'
   ],

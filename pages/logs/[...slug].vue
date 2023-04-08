@@ -27,7 +27,6 @@
       >
         published {{ formattedDate }}
       </span>
-
     </p>
     <ContentDoc />
   </div>
