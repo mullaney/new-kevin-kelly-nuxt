@@ -36,12 +36,12 @@
 <script setup lang="ts">
 const route = useRoute();
 const { path } = route;
-const slug = path.split('/').slice(2);
 const { published_on, title, author, image } = await queryContent('logs').where({ _path: path }).findOne();
-const dateNow = new Date().getTime();
+
 const showPost = computed(() => {
-  return published_on <= dateNow;
+  return published_on <= new Date().getTime();
 });
+
 const formattedDate = computed(() => {
   return new Date(published_on).toLocaleDateString('en-US', {
     year: 'numeric',
