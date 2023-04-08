@@ -9,9 +9,6 @@
     <p>
       Hello! I'm Kevin Kelly. I'm a software engineer. Here, I write about software development, technology, and other things that interest me. If you are looking for my more personal thoughts about improv and life. Check out <NuxtLink to="https://kevinmullaney.com">kevinmullaney.com</NuxtLink>.
     </p>
-    <p>
-      <NuxtLink to="/logs/becoming-an-expert-reducer">Reducer</NuxtLink>
-    </p>
   </div>
 </template>
 
