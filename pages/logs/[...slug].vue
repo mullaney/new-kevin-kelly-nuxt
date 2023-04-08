@@ -13,22 +13,10 @@
       />
     </div>
     <h1>{{ title }}</h1>
-    <p class="meta-data">
-      <span
-        v-if="author"
-      >
-        by {{ author }}
-      </span>
-      <br 
-        v-if="published_on && author"
-      />
-      <span
-        v-if="published_on"
-      >
-        published {{ formattedDate }}
-      </span>
-
-    </p>
+    <LogMetaData
+      :publishedOn="published_on"
+      :author="author"
+    />
     <ContentDoc />
   </div>
 </template>
@@ -36,31 +24,14 @@
 <script setup lang="ts">
 const route = useRoute();
 const { path } = route;
-const slug = path.split('/').slice(2);
 const { published_on, title, author, image } = await queryContent('logs').where({ _path: path }).findOne();
-const dateNow = new Date().getTime();
+
 const showPost = computed(() => {
-  return published_on <= dateNow;
-});
-const formattedDate = computed(() => {
-  return new Date(published_on).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-  });
+  return published_on <= new Date().getTime();
 });
 </script>
 
 <style scoped>
-p.meta-data {
-  font-size: 1rem;
-  font-style: italic;
-  color: #666;
-  margin-top: -1.5rem;
-  line-height: 1.5rem;
-}
 
 .top-image {
   max-width: 100%;
